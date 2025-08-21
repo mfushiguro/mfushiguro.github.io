@@ -6,23 +6,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
+      background-color: #000; /* Black background */
+      color: #f0f0f0; /* Light text */
+      margin: 0;
+      padding: 20px;
     }
-    h2 {
-      margin-top: 25px;
-      color: #2c3e50;
+    h1 {
+      text-align: center;
+      color: #00ff99;
+      margin-bottom: 30px;
+    }
+    .category {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 255, 153, 0.2);
+    }
+    .category h2 {
+      color: #00ffcc;
+      margin-top: 0;
+      font-size: 1.4em;
+      border-bottom: 1px solid #333;
+      padding-bottom: 8px;
     }
     ul {
       list-style: none;
       padding-left: 0;
+      margin: 10px 0 0 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 6px 15px;
     }
     li {
-      padding: 3px 0;
+      padding: 4px 6px;
+      background-color: #1a1a1a;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+    li:hover {
+      background-color: #222;
     }
     .good {
       font-weight: bold;
-      color: green;
+      color: #00ff66;
     }
   </style>
 </head>
@@ -30,104 +58,118 @@
 
   <h1>Favorite Tools for Security Analyst Work</h1>
 
-  <h2>IP and Domain Tools</h2>
-  <ul>
-    <li class="good">VirusTotal</li>
-    <li>Censys Search</li>
-    <li class="good">AbuseIPDB</li>
-    <li>Centralops</li>
-    <li class="good">Cisco Talos</li>
-    <li>Spur</li>
-    <li>ICANN Lookup</li>
-    <li>URLScan.io</li>
-    <li>SpamHaus</li>
-    <li>urlquery.net</li>
-    <li>Shodan</li>
-    <li>Wayback Machine</li>
-    <li>Scamalytics</li>
-    <li>ProjectHoneypot.org</li>
-    <li class="good">IBM X-Force</li>
-    <li class="good">AlienVault</li>
-    <li>SecurityTrails</li>
-    <li>Web-check.as93.net</li>
-    <li>ThreatFox</li>
-    <li>Sucuri</li>
-    <li>Cloudflare Radar</li>
-  </ul>
+  <div class="category">
+    <h2>IP and Domain Tools</h2>
+    <ul>
+      <li class="good">VirusTotal</li>
+      <li>Censys Search</li>
+      <li class="good">AbuseIPDB</li>
+      <li>Centralops</li>
+      <li class="good">Cisco Talos</li>
+      <li>Spur</li>
+      <li>ICANN Lookup</li>
+      <li>URLScan.io</li>
+      <li>SpamHaus</li>
+      <li>urlquery.net</li>
+      <li>Shodan</li>
+      <li>Wayback Machine</li>
+      <li>Scamalytics</li>
+      <li>ProjectHoneypot.org</li>
+      <li class="good">IBM X-Force</li>
+      <li class="good">AlienVault</li>
+      <li>SecurityTrails</li>
+      <li>Web-check.as93.net</li>
+      <li>ThreatFox</li>
+      <li>Sucuri</li>
+      <li>Cloudflare Radar</li>
+    </ul>
+  </div>
 
-  <h2>Hash Reputation</h2>
-  <ul>
-    <li>Cymru</li>
-    <li class="good">VirusTotal</li>
-    <li class="good">AlienVault</li>
-    <li>UrlScan</li>
-    <li class="good">IBM X-Force</li>
-    <li>ThreatFox</li>
-    <li>Joes Sandbox</li>
-  </ul>
+  <div class="category">
+    <h2>Hash Reputation</h2>
+    <ul>
+      <li>Cymru</li>
+      <li class="good">VirusTotal</li>
+      <li class="good">AlienVault</li>
+      <li>UrlScan</li>
+      <li class="good">IBM X-Force</li>
+      <li>ThreatFox</li>
+      <li>Joes Sandbox</li>
+    </ul>
+  </div>
 
-  <h2>Email Addresses</h2>
-  <ul>
-    <li class="good">HudsonRock</li>
-    <li>PasteLeakCheck</li>
-    <li>IntelligenceX</li>
-    <li>CleanTalk</li>
-    <li>LeakIX</li>
-    <li>HunterIO</li>
-    <li>OCCRP</li>
-    <li class="good">Whoisology</li>
-    <li>Whoxy</li>
-  </ul>
+  <div class="category">
+    <h2>Email Addresses</h2>
+    <ul>
+      <li class="good">HudsonRock</li>
+      <li>PasteLeakCheck</li>
+      <li>IntelligenceX</li>
+      <li>CleanTalk</li>
+      <li>LeakIX</li>
+      <li>HunterIO</li>
+      <li>OCCRP</li>
+      <li class="good">Whoisology</li>
+      <li>Whoxy</li>
+    </ul>
+  </div>
 
-  <h2>Phone Numbers</h2>
-  <ul>
-    <li>AdvBackgroundCheck</li>
-    <li class="good">CyberBckGrdCheck</li>
-    <li>InfoTracer</li>
-    <li class="good">TruePeopleSearch</li>
-    <li>WhitePages</li>
-  </ul>
+  <div class="category">
+    <h2>Phone Numbers</h2>
+    <ul>
+      <li>AdvBackgroundCheck</li>
+      <li class="good">CyberBckGrdCheck</li>
+      <li>InfoTracer</li>
+      <li class="good">TruePeopleSearch</li>
+      <li>WhitePages</li>
+    </ul>
+  </div>
 
-  <h2>Other Tools</h2>
-  <ul>
-    <li>crt.sh</li>
-    <li>CyberChef</li>
-    <li>systemlookup.com</li>
-    <li>mha.azurewebsites.net</li>
-    <li>mxtoolbox</li>
-    <li>regex101</li>
-    <li>sslbl.abuse.ch</li>
-    <li>Joes Sandbox</li>
-    <li>IDOA Internet Outages</li>
-    <li>WhatWeb</li>
-    <li>ViewDNS.info</li>
-    <li>Bazzel OSINT Tools</li>
-  </ul>
+  <div class="category">
+    <h2>Other Tools</h2>
+    <ul>
+      <li>crt.sh</li>
+      <li>CyberChef</li>
+      <li>systemlookup.com</li>
+      <li>mha.azurewebsites.net</li>
+      <li>mxtoolbox</li>
+      <li>regex101</li>
+      <li>sslbl.abuse.ch</li>
+      <li>Joes Sandbox</li>
+      <li>IDOA Internet Outages</li>
+      <li>WhatWeb</li>
+      <li>ViewDNS.info</li>
+      <li>Bazzel OSINT Tools</li>
+    </ul>
+  </div>
 
-  <h2>References</h2>
-  <ul>
-    <li>HackTricks</li>
-    <li>wtfbins</li>
-    <li>LOLBAS</li>
-    <li>LOLDrivers</li>
-    <li>GTFOBins</li>
-    <li>HijackLibs</li>
-    <li>ExploitDB</li>
-    <li>MITRE ATT&CK</li>
-    <li>Suricata Docs</li>
-    <li>Threat Hunter Playbook</li>
-    <li>X86 reference</li>
-  </ul>
+  <div class="category">
+    <h2>References</h2>
+    <ul>
+      <li>HackTricks</li>
+      <li>wtfbins</li>
+      <li>LOLBAS</li>
+      <li>LOLDrivers</li>
+      <li>GTFOBins</li>
+      <li>HijackLibs</li>
+      <li>ExploitDB</li>
+      <li>MITRE ATT&CK</li>
+      <li>Suricata Docs</li>
+      <li>Threat Hunter Playbook</li>
+      <li>X86 reference</li>
+    </ul>
+  </div>
 
-  <h2>Security Blogs</h2>
-  <ul>
-    <li>SecurityWeek</li>
-    <li>CISA KEV</li>
-    <li>The Hacker News</li>
-    <li>Bleeping Computer</li>
-    <li>Dark Reading</li>
-    <li>DFIR Report</li>
-  </ul>
+  <div class="category">
+    <h2>Security Blogs</h2>
+    <ul>
+      <li>SecurityWeek</li>
+      <li>CISA KEV</li>
+      <li>The Hacker News</li>
+      <li>Bleeping Computer</li>
+      <li>Dark Reading</li>
+      <li>DFIR Report</li>
+    </ul>
+  </div>
 
 </body>
 </html>
