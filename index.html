@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dani</title>
+  <title>Daniel</title>
   <style>
-    body {
-      margin: 0;
-      background-color: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    img {
-  width: 100vw;   /* 100% of Viewport Width */
-  height: 100vh;  /* 100% of Viewport Height */
-  object-fit: cover; 
+   body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevents accidental scrollbars */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps the whole image visible without distortion */
 }
   </style>
 </head>
