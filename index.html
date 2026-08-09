@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jungle Pocket | The Strongest · ジャングルポケット</title>
+<meta name="description" content="A fan site for Jungle Pocket: 2001 Japanese Derby and Japan Cup winner, Horse of the Year, and the roaring protagonist of Umamusume: Pretty Derby – Beginning of a New Era.">
+<link rel="icon" type="image/png" href="media/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════
+   JUNGLE POCKET · 最強
+   palette: jungle-black · voltage yellow · sock lime ·
+            suspender teal · leopard tan · bone
+   ══════════════════════════════════════════════════════ */
+
+/* every color below is sampled from her race outfit:
+   navy skirt & boots · yellow jacket · mint socks & suspenders ·
+   leopard fur · with the academy uniform's violet as accent    */
+:root{
+  --ink:      #14141F;   /* skirt shadow      */
+  --ink-2:    #1B1B29;
+  --ink-3:    #24243A;   /* skirt midtone     */
+  --navy:     #3C3C54;   /* skirt highlight   */
+  --line:     rgba(243,240,228,0.11);
+  --bone:     #F3F0E4;
+  --paper:    #E6E1D2;
+  --yellow:   #F0DC5A;   /* jacket            */
+  --amber:    #E8B63C;   /* jacket shadow     */
+  --mint:     #78F090;   /* socks, suspenders */
+  --mint-dp:  #4FCB72;
+  --violet:   #8A72DE;   /* academy uniform   */
+  --leo:      #F0DC6E;   /* leopard fur, base */
+  --leo-dark: #46281E;   /* rosette brown     */
+  --muted:    #8A88A0;
+
+  --dim:   rgba(243,240,228,0.64);
+  --dimmer:rgba(243,240,228,0.40);
+
+  --display:'Anton', 'Zen Kaku Gothic New', Impact, sans-serif;
+  --jp:'Zen Kaku Gothic New', sans-serif;
+  --body:'Space Grotesk', 'Zen Kaku Gothic New', system-ui, sans-serif;
+
+  /* her actual fur print: yellow ground, dark brown crescents and ovals.
+     SVG rather than gradients because these are open tapered crescents,
+     and radial-gradient can only ever draw a filled ellipse. */
+  /* her prism: the faceted crystal on the bead chain from the film, drawn as
+     tinted facets rather than a flat mark so it actually refracts */
+  --prism: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Cpath%20d='M16.00,1.50%20L22.29,2.94%20L27.34,6.96%20L30.14,12.77%20L30.14,19.23%20L27.34,25.04%20L22.29,29.06%20L16.00,30.50%20L9.71,29.06%20L4.66,25.04%20L1.86,19.23%20L1.86,12.77%20L4.66,6.96%20L9.71,2.94Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M16.00,1.50%20L22.29,2.94%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M22.29,2.94%20L27.34,6.96%20L16.00,16.00Z'%20fill='%23F5EFA0'/%3E%3Cpath%20d='M27.34,6.96%20L30.14,12.77%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M30.14,12.77%20L30.14,19.23%20L16.00,16.00Z'%20fill='%23C8E6B8'/%3E%3Cpath%20d='M30.14,19.23%20L27.34,25.04%20L16.00,16.00Z'%20fill='%23EDEDF6'/%3E%3Cpath%20d='M27.34,25.04%20L22.29,29.06%20L16.00,16.00Z'%20fill='%23BFE0E6'/%3E%3Cpath%20d='M22.29,29.06%20L16.00,30.50%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M16.00,30.50%20L9.71,29.06%20L16.00,16.00Z'%20fill='%23F5EFA0'/%3E%3Cpath%20d='M9.71,29.06%20L4.66,25.04%20L16.00,16.00Z'%20fill='%23D6CBF0'/%3E%3Cpath%20d='M4.66,25.04%20L1.86,19.23%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M1.86,19.23%20L1.86,12.77%20L16.00,16.00Z'%20fill='%23C8E6B8'/%3E%3Cpath%20d='M1.86,12.77%20L4.66,6.96%20L16.00,16.00Z'%20fill='%23F1EAD2'/%3E%3Cpath%20d='M4.66,6.96%20L9.71,2.94%20L16.00,16.00Z'%20fill='%23BFE0E6'/%3E%3Cpath%20d='M9.71,2.94%20L16.00,1.50%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M17.59,9.52%20L22.05,13.20%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M22.05,13.20%20L21.96,18.99%20L16.00,16.00Z'%20fill='%23EFE9C8'/%3E%3Cpath%20d='M21.96,18.99%20L17.38,22.53%20L16.00,16.00Z'%20fill='%23DDEBD4'/%3E%3Cpath%20d='M17.38,22.53%20L11.76,21.15%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M11.76,21.15%20L9.33,15.90%20L16.00,16.00Z'%20fill='%23D8D2EE'/%3E%3Cpath%20d='M9.33,15.90%20L11.92,10.72%20L16.00,16.00Z'%20fill='%23E4F0F2'/%3E%3Cpath%20d='M11.92,10.72%20L17.59,9.52%20L16.00,16.00Z'%20fill='%23FFFFFF'/%3E%3Cpath%20d='M16.00,1.50%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M27.34,6.96%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M30.14,19.23%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M22.29,29.06%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M9.71,29.06%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M1.86,19.23%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M4.66,6.96%20L16.0,16.0'%20stroke='%232E2745'%20stroke-width='.5'%20stroke-opacity='.28'%20fill='none'/%3E%3Cpath%20d='M17.59,9.52%20L22.05,13.20%20L21.96,18.99%20L17.38,22.53%20L11.76,21.15%20L9.33,15.90%20L11.92,10.72Z'%20fill='none'%20stroke='%232E2745'%20stroke-width='.8'%20stroke-opacity='.45'%20stroke-linejoin='round'/%3E%3Cpath%20d='M16.00,1.50%20L22.29,2.94%20L27.34,6.96%20L30.14,12.77%20L30.14,19.23%20L27.34,25.04%20L22.29,29.06%20L16.00,30.50%20L9.71,29.06%20L4.66,25.04%20L1.86,19.23%20L1.86,12.77%20L4.66,6.96%20L9.71,2.94Z'%20fill='none'%20stroke='%232E2745'%20stroke-width='2.1'%20stroke-linejoin='round'/%3E%3C/svg%3E");
+
+  --leo-spots:
+    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='180'%20height='180'%20viewBox='0%200%20180%20180'%3E%3Crect%20width='180'%20height='180'%20fill='%23F0DC6E'/%3E%3Cpath%20d='M119,128%20L123,130%20L124,134%20L123,138%20L122,142%20L120,145%20L116,147%20L112,148%20L108,147%20L105,144%20L102,141%20L100,137%20L100,133%20L101,129%20L102,125%20L105,123%20L109,124%20L109,124%20L108,127%20L106,129%20L106,131%20L106,133%20L106,135%20L107,137%20L109,139%20L110,140%20L112,140%20L114,140%20L116,140%20L117,138%20L118,136%20L119,134%20L119,131%20L119,128Z'%20fill='%2346281E'/%3E%3Cpath%20d='M143,-25%20L147,-28%20L152,-26%20L156,-24%20L159,-21%20L161,-16%20L163,-12%20L163,-8%20L163,-3%20L161,1%20L158,4%20L154,6%20L150,8%20L146,9%20L141,8%20L137,5%20L135,1%20L135,1%20L139,-0%20L142,1%20L145,1%20L147,-0%20L149,-2%20L151,-3%20L152,-5%20L153,-7%20L153,-9%20L153,-11%20L152,-13%20L152,-16%20L150,-18%20L148,-20%20L146,-22%20L143,-25Z'%20fill='%2346281E'/%3E%3Cpath%20d='M147,183%20L144,187%20L140,187%20L136,186%20L133,184%20L130,181%20L127,177%20L126,173%20L126,168%20L127,164%20L129,159%20L132,156%20L135,154%20L139,152%20L143,153%20L147,154%20L149,158%20L149,158%20L146,159%20L143,159%20L141,160%20L139,161%20L137,162%20L135,164%20L135,167%20L134,169%20L134,171%20L134,174%20L136,176%20L137,177%20L139,179%20L141,180%20L144,181%20L147,183Z'%20fill='%2346281E'/%3E%3Cpath%20d='M15,84%20L17,86%20L17,89%20L16,91%20L14,93%20L12,95%20L10,96%20L8,97%20L5,97%20L3,96%20L0,95%20L-2,94%20L-4,92%20L-5,90%20L-6,88%20L-6,85%20L-5,83%20L-5,83%20L-3,85%20L-2,86%20L-1,87%20L0,88%20L1,89%20L3,90%20L4,90%20L5,91%20L7,90%20L8,90%20L9,90%20L10,89%20L11,88%20L12,87%20L13,85%20L15,84Z'%20fill='%2346281E'/%3E%3Cpath%20d='M194,80%20L197,81%20L197,84%20L198,86%20L197,88%20L196,91%20L195,93%20L193,95%20L190,96%20L188,97%20L185,97%20L183,97%20L181,96%20L178,95%20L177,93%20L175,91%20L176,88%20L176,88%20L179,88%20L180,89%20L181,90%20L183,90%20L184,90%20L185,90%20L187,90%20L188,90%20L189,89%20L190,88%20L190,87%20L191,86%20L192,85%20L192,84%20L192,82%20L194,80Z'%20fill='%2346281E'/%3E%3Cpath%20d='M79,33%20L81,28%20L86,27%20L90,28%20L95,30%20L99,33%20L101,38%20L103,42%20L103,47%20L102,52%20L99,55%20L96,59%20L91,61%20L87,62%20L82,62%20L78,59%20L76,54%20L76,54%20L81,53%20L83,54%20L85,53%20L88,52%20L90,51%20L91,49%20L92,48%20L92,45%20L93,43%20L92,41%20L91,39%20L89,38%20L87,36%20L85,35%20L82,35%20L79,33Z'%20fill='%2346281E'/%3E%3Cpath%20d='M55,-2%20L52,1%20L48,2%20L44,1%20L40,-0%20L37,-3%20L34,-6%20L33,-10%20L32,-14%20L33,-18%20L34,-22%20L36,-26%20L39,-29%20L42,-31%20L46,-32%20L50,-32%20L53,-28%20L53,-28%20L50,-25%20L48,-24%20L46,-23%20L45,-22%20L43,-20%20L43,-18%20L43,-16%20L42,-15%20L42,-13%20L43,-11%20L44,-9%20L45,-8%20L47,-7%20L49,-5%20L51,-5%20L55,-2Z'%20fill='%2346281E'/%3E%3Cpath%20d='M57,176%20L54,181%20L50,181%20L45,181%20L41,180%20L37,176%20L35,172%20L33,167%20L33,163%20L33,158%20L36,153%20L40,150%20L44,148%20L49,148%20L54,148%20L58,151%20L59,155%20L59,155%20L55,156%20L52,155%20L50,156%20L47,157%20L45,158%20L43,159%20L42,162%20L42,164%20L42,166%20L43,168%20L44,170%20L45,172%20L48,173%20L50,174%20L53,175%20L57,176Z'%20fill='%2346281E'/%3E%3Cpath%20d='M42,28%20L45,28%20L47,29%20L49,31%20L51,34%20L52,37%20L52,40%20L52,43%20L51,46%20L50,48%20L48,51%20L45,52%20L43,53%20L40,53%20L37,53%20L34,52%20L33,49%20L33,49%20L36,47%20L37,47%20L39,47%20L41,47%20L42,46%20L43,45%20L44,44%20L45,42%20L45,41%20L45,39%20L45,38%20L45,36%20L45,34%20L44,33%20L43,31%20L42,28Z'%20fill='%2346281E'/%3E%3Cpath%20d='M64,107%20L66,110%20L66,112%20L66,115%20L64,118%20L62,119%20L59,120%20L57,122%20L54,121%20L51,121%20L48,120%20L46,119%20L44,117%20L43,114%20L42,111%20L43,109%20L45,107%20L45,107%20L47,109%20L48,110%20L48,112%20L49,113%20L50,113%20L51,114%20L53,115%20L54,115%20L56,115%20L57,114%20L58,114%20L59,113%20L61,112%20L61,111%20L62,109%20L64,107Z'%20fill='%2346281E'/%3E%3Cpath%20d='M-11,138%20L-11,134%20L-8,130%20L-3,128%20L3,125%20L8,125%20L14,125%20L19,127%20L22,130%20L24,134%20L25,139%20L24,143%20L22,147%20L18,151%20L13,154%20L8,156%20L3,155%20L3,155%20L6,151%20L9,149%20L11,147%20L12,145%20L13,142%20L13,140%20L13,138%20L12,137%20L11,135%20L8,134%20L6,134%20L3,133%20L0,135%20L-3,135%20L-5,137%20L-11,138Z'%20fill='%2346281E'/%3E%3Cpath%20d='M195,146%20L196,151%20L195,154%20L192,157%20L188,159%20L184,160%20L180,160%20L177,158%20L173,157%20L170,153%20L168,150%20L167,145%20L166,141%20L168,137%20L169,134%20L172,131%20L176,131%20L176,131%20L176,135%20L175,137%20L175,139%20L174,141%20L175,144%20L175,146%20L176,148%20L178,149%20L180,150%20L182,151%20L184,151%20L186,151%20L188,150%20L190,149%20L192,147%20L195,146Z'%20fill='%2346281E'/%3E%3Cpath%20d='M127,90%20L126,94%20L123,96%20L119,96%20L116,96%20L112,95%20L109,93%20L106,91%20L103,88%20L102,84%20L101,80%20L101,76%20L102,72%20L103,68%20L105,64%20L107,62%20L112,63%20L112,63%20L112,67%20L111,69%20L110,71%20L111,74%20L110,76%20L111,78%20L111,80%20L112,82%20L113,83%20L115,84%20L116,85%20L118,86%20L119,86%20L121,88%20L124,87%20L127,90Z'%20fill='%2346281E'/%3E%3Cpath%20d='M-32,43%20L-35,42%20L-38,39%20L-39,35%20L-39,32%20L-38,28%20L-36,26%20L-33,24%20L-30,23%20L-26,23%20L-23,24%20L-19,26%20L-17,29%20L-16,33%20L-15,36%20L-15,39%20L-18,41%20L-18,41%20L-19,38%20L-19,36%20L-21,34%20L-21,32%20L-23,31%20L-25,30%20L-26,29%20L-28,29%20L-30,30%20L-31,31%20L-33,32%20L-33,34%20L-33,35%20L-33,37%20L-32,39%20L-32,43Z'%20fill='%2346281E'/%3E%3Cpath%20d='M149,26%20L151,23%20L153,23%20L156,23%20L158,23%20L161,24%20L163,26%20L165,28%20L166,30%20L167,33%20L167,35%20L166,38%20L165,41%20L163,43%20L162,45%20L159,46%20L156,45%20L156,45%20L157,42%20L159,41%20L159,40%20L160,38%20L160,37%20L160,35%20L160,34%20L160,33%20L159,31%20L158,30%20L157,29%20L156,29%20L155,28%20L153,28%20L152,28%20L149,26Z'%20fill='%2346281E'/%3E%3Cpath%20d='M89,107%20L86,107%20L83,104%20L81,99%20L81,94%20L82,91%20L84,90%20L87,92%20L91,96%20L91,101%20L90,104Z'%20fill='%2346281E'/%3E%3Cpath%20d='M28,112%20L26,110%20L24,108%20L24,105%20L25,102%20L27,99%20L29,100%20L31,102%20L31,105%20L31,108%20L30,111Z'%20fill='%2346281E'/%3E%3Cpath%20d='M137,125%20L136,122%20L137,119%20L140,116%20L144,113%20L147,113%20L149,115%20L149,118%20L146,121%20L144,125%20L139,126Z'%20fill='%2346281E'/%3E%3Cpath%20d='M-3,4%20L-5,4%20L-6,2%20L-7,0%20L-8,-2%20L-6,-4%20L-4,-4%20L-2,-4%20L-0,-2%20L-0,1%20L-1,3Z'%20fill='%2346281E'/%3E%3Cpath%20d='M-2,185%20L-5,184%20L-6,183%20L-9,181%20L-9,178%20L-7,175%20L-4,175%20L-2,175%20L1,177%20L1,180%20L0,182Z'%20fill='%2346281E'/%3E%3Cpath%20d='M180,3%20L179,4%20L176,4%20L173,2%20L172,-0%20L172,-2%20L173,-4%20L175,-5%20L178,-3%20L180,-1%20L181,1Z'%20fill='%2346281E'/%3E%3Cpath%20d='M180,181%20L179,183%20L177,184%20L174,183%20L172,182%20L172,179%20L172,177%20L174,176%20L177,175%20L180,177%20L181,179Z'%20fill='%2346281E'/%3E%3Cpath%20d='M118,11%20L120,8%20L122,5%20L126,4%20L131,4%20L132,6%20L134,8%20L132,11%20L128,14%20L125,14%20L121,13Z'%20fill='%2346281E'/%3E%3Cpath%20d='M131,194%20L128,196%20L124,194%20L121,191%20L120,188%20L121,184%20L123,182%20L126,183%20L130,185%20L132,188%20L132,192Z'%20fill='%2346281E'/%3E%3Cpath%20d='M86,168%20L86,165%20L86,162%20L88,160%20L91,158%20L94,159%20L96,161%20L97,164%20L95,167%20L93,169%20L89,170Z'%20fill='%2346281E'/%3E%3Cpath%20d='M41,138%20L41,134%20L41,132%20L44,130%20L47,130%20L49,131%20L51,133%20L50,137%20L49,139%20L46,140%20L44,140Z'%20fill='%2346281E'/%3E%3Cpath%20d='M47,68%20L46,71%20L43,73%20L40,71%20L38,70%20L37,67%20L37,64%20L39,62%20L43,62%20L46,62%20L47,65Z'%20fill='%2346281E'/%3E%3Cpath%20d='M11,29%20L10,26%20L12,22%20L14,19%20L17,16%20L21,16%20L22,18%20L22,21%20L20,25%20L18,28%20L14,29Z'%20fill='%2346281E'/%3E%3Cpath%20d='M163,89%20L162,91%20L158,91%20L155,89%20L152,87%20L151,85%20L153,83%20L156,82%20L159,83%20L162,84%20L163,87Z'%20fill='%2346281E'/%3E%3Cpath%20d='M72,28%20L70,28%20L69,27%20L67,25%20L66,24%20L67,22%20L68,21%20L70,21%20L71,23%20L73,25%20L73,27Z'%20fill='%2346281E'/%3E%3C/svg%3E");
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+img{max-width:100%;height:auto;display:block}
+
+body{
+  background:var(--ink);
+  color:var(--bone);
+  font-family:var(--body);
+  font-size:clamp(0.95rem,1.05vw,1.06rem);
+  line-height:1.75;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* fine turf-grain over everything */
+body::after{
+  content:'';position:fixed;inset:-50%;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9998;
+  animation:grain .6s steps(1) infinite;
+}
+@keyframes grain{
+  0%{transform:translate(0,0)}25%{transform:translate(-2%,3%)}
+  50%{transform:translate(2%,-2%)}75%{transform:translate(-3%,1%)}
+  100%{transform:translate(1%,-3%)}
+}
+
+
+/* ── scroll rail: the run home ───────────────────────── */
+.rail{position:fixed;top:0;left:0;height:4px;width:100%;background:rgba(243,240,228,.08);z-index:9997}
+.rail__fill{height:100%;width:0;background:linear-gradient(90deg,var(--violet),var(--mint),var(--yellow),var(--amber));box-shadow:0 0 14px rgba(240,220,90,.6)}
+
+/* ── furlong markers (side nav) ──────────────────────── */
+.poles{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:9996;display:flex;flex-direction:column;gap:16px}
+.pole{display:flex;align-items:center;justify-content:flex-end;gap:10px;text-decoration:none;cursor:pointer}
+.pole__label{
+  font-family:var(--jp);font-weight:700;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--dimmer);opacity:0;transform:translateX(6px);transition:.25s ease;white-space:nowrap;
+}
+.pole__tick{width:16px;height:2px;background:rgba(243,240,228,.28);transition:.25s ease;flex-shrink:0}
+.pole:hover .pole__label,.pole.is-on .pole__label{opacity:1;transform:translateX(0)}
+.pole:hover .pole__tick{background:var(--bone);width:26px}
+.pole.is-on .pole__tick{background:var(--yellow);width:32px;height:3px;box-shadow:0 0 10px rgba(240,220,90,.7)}
+@media (max-width:1100px){.poles{display:none}}
+
+/* ── HERO ────────────────────────────────────────────── */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+/* the art is portrait and cover-fits to the full width, so there is no horizontal
+   slack for object-position to use. Shifting her clear of the title needs the
+   element itself moved; the scrim then runs solid out to 26% to hide its edge. */
+.hero__art{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:50% 22%;z-index:0;filter:saturate(1.08) contrast(1.04);
+  transform:translateX(19%);
+}
+.hero__scrim{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(100deg,var(--ink) 26%,rgba(20,20,31,.84) 42%,rgba(20,20,31,.35) 62%,rgba(20,20,31,.55) 100%),
+    linear-gradient(180deg,rgba(20,20,31,.75) 0%,transparent 28%,rgba(20,20,31,.92) 100%);
+}
+/* two parallel stripes: full width so neither end is cut off, and both floating
+   clear of the bottom so the hero art still reads underneath them */
+.hero__slash{
+  position:absolute;z-index:1;left:0;bottom:0;width:100%;height:46%;
+  background:var(--yellow);opacity:.94;
+  clip-path:polygon(0 86%,100% 42%,100% 52%,0 96%);
+}
+.hero__slash--thin{             /* mint pinstripe, parallel, riding above it */
+  height:46%;background:var(--mint);opacity:.9;
+  clip-path:polygon(0 72%,100% 28%,100% 34%,0 78%);
+}
+@media (max-width:640px){
+  .hero__slash{height:26%}
+  .hero__slash--thin{height:26%}
+}
+.hero__inner{position:relative;z-index:3;width:100%;padding:0 clamp(24px,7vw,120px) clamp(150px,26vh,300px)}
+
+.hero__kicker{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:var(--jp);font-weight:900;font-size:clamp(.6rem,.85vw,.74rem);
+  letter-spacing:.38em;text-transform:uppercase;color:var(--yellow);margin-bottom:18px;
+}
+.hero__kicker::before{content:'';width:44px;height:3px;background:var(--yellow)}
+
+.hero__title{
+  font-family:var(--display);line-height:.8;letter-spacing:-.005em;
+  font-size:clamp(4.2rem,15.5vw,15rem);text-transform:uppercase;
+}
+.hero__title span{display:block}
+.hero__title .l1{color:var(--bone)}
+.hero__title .l2{
+  background-color:var(--leo);background-image:var(--leo-spots);background-size:110px 110px;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:2px rgba(20,20,31,.55);
+}
+.hero__sub{
+  margin-top:22px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 26px;
+  font-family:var(--jp);font-weight:700;font-size:clamp(.68rem,1vw,.8rem);
+  letter-spacing:.26em;text-transform:uppercase;color:var(--dim);
+}
+.hero__sub b{color:var(--mint-dp);font-weight:900}
+/* the quote gets its own plate so it never fights the artwork behind it */
+.hero__quote{
+  margin-top:26px;display:block;width:fit-content;
+  color:var(--bone);background:rgba(20,20,31,.90);
+  border-left:5px solid var(--yellow);padding:15px 22px 15px 19px;
+  box-shadow:0 10px 34px rgba(0,0,0,.45);
+}
+.hero__quote b{display:block;font-family:var(--display);text-transform:uppercase;
+  font-size:clamp(1.55rem,2.7vw,2.3rem);line-height:.95;letter-spacing:.035em;color:var(--bone)}
+.hero__quote span{display:block;margin-top:6px;font-family:var(--jp);font-weight:900;
+  font-size:clamp(.58rem,.8vw,.68rem);letter-spacing:.32em;text-transform:uppercase;color:var(--yellow)}
+@supports (backdrop-filter:blur(3px)){
+  .hero__quote{background:rgba(20,20,31,.78);backdrop-filter:blur(4px)}
+}
+/* the meta row sits over photography too, give it a floor */
+.hero__sub{text-shadow:0 2px 10px rgba(20,20,31,.9)}
+.hero__jp{
+  position:absolute;right:clamp(18px,3.4vw,54px);top:50%;transform:translateY(-50%);z-index:3;
+  writing-mode:vertical-rl;font-family:var(--jp);font-weight:700;
+  font-size:clamp(.66rem,.85vw,.8rem);letter-spacing:.55em;color:rgba(243,240,228,.30);
+}
+.hero__scroll{
+  position:absolute;left:clamp(24px,7vw,120px);bottom:14px;z-index:3;
+  font-family:var(--jp);font-size:.58rem;letter-spacing:.35em;color:var(--dimmer);text-transform:uppercase;
+}
+@media (max-width:1100px){.hero__jp{display:none}}
+@media (max-width:640px){
+  .hero__art{object-position:64% 14%;transform:none}
+  .hero__scrim{background:linear-gradient(180deg,rgba(20,20,31,.55) 0%,rgba(20,20,31,.2) 30%,rgba(20,20,31,.97) 72%)}
+}
+
+/* ── TICKER ──────────────────────────────────────────── */
+/* the -8px margin tucks the angled band under its neighbours; without a z-index
+   the positioned sections above and below paint over it and clip the text */
+.ticker{
+  position:relative;z-index:5;overflow:hidden;padding:13px 0;
+  transform:rotate(-1.3deg) scaleX(1.05);margin:-8px 0;
+  border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);
+}
+.ticker--yellow{background:var(--yellow)}
+.ticker--mint{background:var(--mint-dp)}
+.ticker--violet{background:var(--violet)}
+.ticker--leo{background-color:var(--leo);background-image:var(--leo-spots);background-size:150px 150px}
+.ticker--ink{background:var(--ink-3);border-color:rgba(243,240,228,.08)}
+.ticker--violet .ticker__track b{color:#160F2C}
+.ticker--flip{transform:rotate(1.3deg) scaleX(1.05)}
+.ticker__track{display:flex;width:max-content;animation:slide 34s linear infinite}
+.ticker--flip .ticker__track{animation-direction:reverse}
+.ticker__track b{
+  font-family:var(--jp);font-weight:900;font-size:clamp(.72rem,1.1vw,.92rem);
+  letter-spacing:.3em;text-transform:uppercase;color:var(--ink);
+  padding:0 26px;white-space:nowrap;line-height:1.4;
+}
+.ticker--ink .ticker__track b{color:rgba(243,240,228,.30)}
+.ticker--leo .ticker__track b{color:#2E1B08;
+  text-shadow:0 0 4px rgba(240,220,110,.98),0 1px 0 rgba(240,220,110,.98),
+              0 -1px 0 rgba(240,220,110,.98),1px 0 0 rgba(240,220,110,.95),-1px 0 0 rgba(240,220,110,.95)}
+.ticker__track b.px{padding:0;margin:0 18px;width:14px;height:14px;align-self:center;
+  flex-shrink:0;background:var(--prism) center/contain no-repeat}
+.ticker--leo .ticker__track b.px{filter:drop-shadow(0 0 2px rgba(240,220,110,.95))}
+
+/* the long-form quote reads, so it drops the caps and slows right down */
+.ticker--quote{background:var(--ink-3);border-color:rgba(243,240,228,.10)}
+.ticker--quote .ticker__track{animation-duration:78s}
+.ticker--quote .ticker__track b{color:rgba(243,240,228,.74);font-weight:700;
+  text-transform:none;letter-spacing:.05em;font-size:clamp(.8rem,1.15vw,.98rem);padding:0 14px}
+.ticker--quote .ticker__track b.px{margin:0 14px}
+.ticker--quote .ticker__track b.cite{color:var(--yellow);font-weight:900;letter-spacing:.22em;
+  text-transform:uppercase;font-size:.64rem}
+
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .ticker__track{animation:none}
+  body::after{animation:none}
+  .eyebrow::before,.ticker__track b.px,.songs__prism .songs__ico{animation:none}
+}
+
+/* the prism turns and refracts continuously. Two animations rather than one so
+   the turn can run linear while the shimmer eases; and no scale, so the mark
+   never changes size. Saturation not brightness: the gem is near-white, so
+   brightening only blows the facets out to flat white. */
+@keyframes prism-spin{to{transform:rotate(360deg)}}
+@keyframes prism-shimmer{
+  0%,100%{filter:saturate(1.08) hue-rotate(0deg)   brightness(1)    drop-shadow(0 0 1px rgba(255,255,255,.30))}
+  50%    {filter:saturate(1.95) hue-rotate(-15deg) brightness(1.06) drop-shadow(0 0 5px rgba(255,255,255,.80))}
+}
+@keyframes prism-shimmer-lite{
+  0%,100%{filter:saturate(1.08) hue-rotate(0deg)   brightness(1)}
+  50%    {filter:saturate(2)    hue-rotate(-15deg) brightness(1.07)}
+}
+.eyebrow::before{animation:prism-spin 17s linear infinite, prism-shimmer 3.4s ease-in-out infinite}
+.songs__prism .songs__ico{animation:prism-spin 15s linear infinite, prism-shimmer 3.8s ease-in-out infinite;
+  animation-delay:-2.1s}
+.ticker__track b.px{animation:prism-spin 14s linear infinite, prism-shimmer-lite 3.1s ease-in-out infinite}
+/* negative offsets so they are already mid-cycle and never shimmer in unison */
+.ticker__track b.px:nth-of-type(6n+2){animation-delay:-.6s}
+.ticker__track b.px:nth-of-type(6n+3){animation-delay:-1.2s}
+.ticker__track b.px:nth-of-type(6n+4){animation-delay:-1.8s}
+.ticker__track b.px:nth-of-type(6n+5){animation-delay:-2.4s}
+.ticker__track b.px:nth-of-type(6n+6){animation-delay:-3s}
+
+/* ── SECTION FURNITURE ───────────────────────────────── */
+.wrap{padding:clamp(58px,8vw,110px) clamp(24px,7vw,120px)}
+.eyebrow{
+  display:flex;align-items:center;gap:12px;
+  font-family:var(--jp);font-weight:900;font-size:clamp(.58rem,.82vw,.7rem);
+  letter-spacing:.42em;text-transform:uppercase;color:var(--yellow);margin-bottom:14px;
+}
+.eyebrow::before{content:'';width:15px;height:15px;flex-shrink:0;
+  background:var(--prism) center/contain no-repeat}
+.h2{
+  font-family:var(--display);text-transform:uppercase;line-height:.86;letter-spacing:0;
+  font-size:clamp(2.6rem,6.4vw,5.6rem);
+}
+.h2 em{font-style:normal;color:var(--yellow)}
+.h3{
+  font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;
+  font-size:clamp(1.4rem,2.4vw,2.1rem);line-height:1.05;
+}
+.lede{font-size:clamp(1.02rem,1.35vw,1.24rem);line-height:1.62;color:var(--bone);max-width:56ch}
+.prose{color:var(--dim);max-width:62ch}
+.prose p+p{margin-top:14px}
+.prose p,.lede{text-wrap:pretty}
+.prose strong{color:var(--bone);font-weight:700}
+.prose em{font-style:normal;color:var(--yellow)}
+.sec-head{margin-bottom:clamp(28px,4vw,46px)}
+
+/* ── TRAINEE (light) ─────────────────────────────────── */
+.trainee{background:var(--bone);color:var(--ink);position:relative}
+.trainee::before{content:'';position:absolute;top:0;left:0;right:0;height:14px;background-color:var(--leo);background-image:var(--leo-spots);background-size:120px 120px}
+.trainee .eyebrow{color:#846210}
+.trainee .h2 em{color:#846210}
+.trainee .prose{color:#3A384A}
+.trainee .prose strong{color:var(--ink)}
+.trainee .prose em{color:#846210}
+
+.trainee__top{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,60px);align-items:start}
+
+.speech{
+  position:relative;background:var(--ink);color:var(--bone);padding:26px 28px;margin-top:26px;
+  border-left:5px solid var(--yellow);
+}
+.speech q{font-family:var(--jp);font-weight:700;font-size:clamp(1.05rem,1.7vw,1.42rem);line-height:1.45;quotes:none;display:block}
+.speech cite{display:block;margin-top:12px;font-style:normal;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--yellow)}
+
+/* spec sheet */
+.spec{border-top:2px solid var(--ink);margin-top:6px}
+.spec__row{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:9px 2px;border-bottom:1px solid rgba(20,20,31,.14);align-items:baseline}
+.spec__k{font-family:var(--jp);font-weight:900;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:#6A6880}
+.spec__v{font-weight:500;text-align:right;font-size:.95rem}
+.spec__v .jp{font-family:var(--jp);color:#6A6880;margin-left:8px;font-size:.85em}
+
+/* outfit trio: deliberately compact, it's a reference strip not a gallery */
+.fits{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.2vw,14px);
+      margin-top:clamp(26px,3.4vw,42px);max-width:660px}
+.fit{position:relative;background:var(--paper);overflow:hidden;border:2px solid var(--ink)}
+.fit{background:#fff}
+/* box matches the narrowest artwork (0.675) so cover never crops vertically */
+.fit img{width:100%;aspect-ratio:27/40;object-fit:cover;object-position:center center;background:#fff;transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+.fit:hover img{transform:scale(1.05)}
+.fit__tag{
+  position:absolute;left:0;bottom:0;right:0;padding:22px 11px 9px;
+  background:linear-gradient(0deg,rgba(20,20,31,.96) 0%,rgba(20,20,31,.88) 52%,rgba(20,20,31,0) 100%);
+  display:flex;flex-direction:column;gap:1px;
+}
+.fit__name{font-family:var(--display);text-transform:uppercase;font-size:clamp(.72rem,1vw,.92rem);
+  color:var(--bone);letter-spacing:.02em;line-height:1.1;
+  text-shadow:0 1px 2px rgba(20,20,31,.95),0 0 9px rgba(20,20,31,.85)}
+.fit__no{font-family:var(--jp);font-weight:900;font-size:.5rem;letter-spacing:.18em;color:var(--yellow);
+  text-shadow:0 1px 2px rgba(20,20,31,.95),0 0 8px rgba(20,20,31,.85)}
+.fit:nth-child(2)::after,.fit:nth-child(3)::after{content:'';position:absolute;top:8px;right:8px;width:9px;height:9px;transform:rotate(45deg)}
+.fit:nth-child(2)::after{background:var(--mint)}
+.fit:nth-child(3)::after{background:var(--mint-dp)}
+
+/* outfit strip + walk-out clip share one row so the strip isn't left stranded */
+.fits-row{display:grid;grid-template-columns:minmax(0,660px) minmax(0,1fr);
+          gap:clamp(14px,2vw,26px);align-items:stretch;margin-top:clamp(26px,3.4vw,42px)}
+.fits-row .fits{margin-top:0;max-width:none}
+.reel{position:relative;overflow:hidden;border:2px solid var(--ink);background:#000;
+      display:flex;align-items:center;justify-content:center}
+.reel img{width:100%;height:100%;object-fit:cover;filter:saturate(1.1) contrast(1.03)}
+.reel::after{content:'';position:absolute;inset:0;pointer-events:none;
+             background:repeating-linear-gradient(180deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px);
+             mix-blend-mode:multiply}
+.reel__lab{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:9px 11px;
+           background:linear-gradient(0deg,rgba(20,20,31,.94),rgba(20,20,31,0));
+           font-family:var(--jp);font-weight:900;font-size:.5rem;letter-spacing:.18em;
+           text-transform:uppercase;color:var(--yellow)}
+@media (max-width:960px){
+  .fits-row{grid-template-columns:1fr}
+  .reel{min-height:190px}
+}
+
+/* cards / kit */
+.kit{display:grid;grid-template-columns:180px 1fr;gap:clamp(20px,3vw,40px);align-items:start;margin-top:clamp(34px,5vw,58px);padding-top:clamp(28px,4vw,44px);border-top:2px solid var(--ink)}
+.kit__img{border:2px solid var(--ink);box-shadow:8px 8px 0 var(--yellow)}
+.cardlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;margin-top:14px}
+.cardlist li{list-style:none;display:flex;align-items:center;gap:10px;padding:9px 12px;background:rgba(20,20,31,.05);border-left:3px solid var(--ink)}
+.cardlist .r{font-family:var(--display);font-size:.8rem;letter-spacing:.06em;color:var(--ink);background:var(--yellow);padding:1px 7px;flex-shrink:0}
+.cardlist .r--sr{background:var(--mint)}
+.cardlist .r--n{background:#C6C4D2}
+.cardlist .n{font-weight:700;font-size:.88rem;line-height:1.3;min-width:0;text-wrap:pretty}
+/* two even columns instead of one narrow ragged block under a wide grid */
+.kit__note{margin-top:18px;font-size:.86rem;max-width:none;columns:2;column-gap:34px}
+.kit__note p{break-inside:avoid;margin-bottom:0}
+.kit__note p+p{margin-top:0}
+@media (max-width:760px){.kit__note{columns:1}.kit__note p+p{margin-top:12px}}
+.cardlist .t{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#6A6880;margin-left:auto;flex-shrink:0}
+
+/* songs + spotify: warmed onto her jacket palette rather than neutral greys */
+.spotify{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);
+         gap:clamp(16px,2.4vw,30px);align-items:start;margin-top:16px}
+
+.spotify__player{position:relative;background:var(--ink);padding:14px;padding-top:22px;
+         border-bottom:5px solid var(--yellow);box-shadow:0 12px 32px rgba(20,20,31,.22)}
+.spotify__player::before{content:'';position:absolute;top:0;left:0;right:0;height:10px;
+         background-color:var(--leo);background-image:var(--leo-spots);background-size:90px 90px}
+.spotify__player iframe{display:block;border-radius:10px;border:0}
+.spotify__cred{margin-top:11px;font-family:var(--jp);font-weight:900;font-size:.55rem;
+         letter-spacing:.18em;text-transform:uppercase;color:var(--yellow)}
+
+.songs{display:grid;gap:5px;align-content:start}
+.songs li{list-style:none}
+.songs a{display:flex;align-items:center;gap:11px;padding:9px 13px;text-decoration:none;
+         color:var(--ink);background:rgba(232,182,60,.16);border-left:3px solid var(--amber);
+         transition:background .16s ease,border-color .16s ease,transform .16s ease}
+.songs a:hover{background:rgba(232,182,60,.34);border-left-color:#846210;transform:translateX(3px)}
+.songs a:focus-visible{outline:2px solid #846210;outline-offset:2px}
+.songs__ico{width:12px;height:12px;border-radius:50%;flex-shrink:0;background:#3E9E5C;
+         box-shadow:inset 0 0 0 3px rgba(243,240,228,.92),inset 0 0 0 4px #3E9E5C}
+.songs__prism .songs__ico{width:15px;height:15px;border-radius:0;box-shadow:none;
+  background:var(--prism) center/contain no-repeat}
+.songs .is-find .songs__ico{background:transparent;box-shadow:inset 0 0 0 2px #6B57B0}
+.songs .is-find a{background:rgba(138,114,222,.13);border-left-color:#6B57B0}
+.songs .is-find a:hover{background:rgba(138,114,222,.26)}
+.songs__n{font-size:.88rem;font-weight:500;line-height:1.25}
+.songs__jp{display:block;font-family:var(--jp);font-size:.62rem;letter-spacing:.1em;color:#5E5233}
+.songs__tag{font-family:var(--jp);font-weight:900;font-size:.5rem;letter-spacing:.18em;
+         text-transform:uppercase;color:#6E500A;border:1px solid rgba(110,80,10,.5);padding:2px 6px}
+.songs__go{margin-left:auto;font-family:var(--jp);font-weight:900;font-size:.52rem;
+         letter-spacing:.2em;text-transform:uppercase;color:#5E5233;flex-shrink:0}
+.songs a:hover .songs__go{color:var(--ink)}
+.songs__solo a{background:var(--ink);border-left-color:var(--yellow)}
+.songs__solo a:hover{background:#24243A;border-left-color:var(--mint)}
+.songs__solo .songs__n{color:var(--bone);font-weight:700}
+.songs__solo .songs__jp{color:rgba(243,240,228,.5)}
+.songs__solo .songs__tag{color:var(--yellow);border-color:rgba(240,220,90,.55)}
+.songs__solo .songs__go{color:var(--yellow)}
+.songs__solo .songs__ico{background:var(--mint);box-shadow:inset 0 0 0 3px var(--ink),inset 0 0 0 4px var(--mint)}
+.spotify__list{min-width:0}
+.songs__note{margin-top:11px;font-size:.74rem;line-height:1.6;color:#5E5233;max-width:56ch;text-wrap:pretty}
+.songs__note b{color:var(--ink);font-weight:700}
+@media (max-width:820px){.spotify{grid-template-columns:1fr}}
+
+/* ── THE HORSE ───────────────────────────────────────── */
+.horse{background:var(--ink-2)}
+.horse__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);align-items:start}
+.figure{position:relative}
+.figure img{width:100%;border:1px solid var(--line)}
+.figure figcaption{
+  margin-top:10px;font-family:var(--jp);font-size:.62rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--dimmer);
+}
+.figure--plate img{border:1px solid var(--line);border-bottom:4px solid var(--yellow);background:var(--ink-3)}
+.figstack{display:grid;gap:18px}
+/* the candid: a snapshot pinned into the text column, not a gallery plate */
+.snap{max-width:300px;margin-top:28px}
+.snap img{border:1px solid var(--line);border-bottom:4px solid var(--mint)}
+@media (max-width:960px){.snap{max-width:240px}}
+
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tag{
+  font-family:var(--jp);font-weight:700;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
+  padding:6px 12px;border:1px solid var(--line);color:var(--dim);
+}
+.tag--hot{border-color:var(--yellow);color:var(--yellow)}
+
+/* ── NUMBERS ─────────────────────────────────────────── */
+.numbers{background:var(--yellow);color:var(--ink);position:relative;overflow:hidden}
+.numbers__ghost{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:var(--display);font-size:clamp(12rem,30vw,28rem);line-height:.8;
+  color:rgba(20,20,31,.07);white-space:nowrap;pointer-events:none;letter-spacing:-.02em;
+}
+.numbers__in{position:relative;z-index:2}
+.numbers .eyebrow{color:rgba(20,20,31,.68)}
+.numbers .h2{color:var(--ink)}
+.statgrid{display:grid;grid-template-columns:repeat(5,1fr);border-top:3px solid var(--ink)}
+.stat{padding:26px 16px 10px;border-right:1px solid rgba(20,20,31,.22)}
+.stat:last-child{border-right:none}
+.stat__n{font-family:var(--display);font-size:clamp(2.4rem,4.6vw,4.4rem);line-height:.9;letter-spacing:-.01em}
+.stat__n sup{font-size:.42em;vertical-align:super;margin-left:2px}
+.stat__d{font-family:var(--jp);font-weight:900;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(20,20,31,.72);margin-top:8px}
+.stat__x{font-size:.72rem;color:rgba(20,20,31,.68);margin-top:2px}
+
+/* ── THE DAYS ────────────────────────────────────────── */
+.day{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:60vh}
+.day__media{position:relative;overflow:hidden;min-height:340px;background:var(--ink-3)}
+.day__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.day__media::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,20,31,.55),transparent 45%)}
+.day__body{padding:clamp(34px,5vw,72px) clamp(24px,5vw,72px);display:flex;flex-direction:column;justify-content:center;position:relative}
+.day--a{background:var(--ink)}
+.day--b{background:var(--ink-2)}
+.day--b .day__media{order:2}
+.day--b .day__media::after{background:linear-gradient(270deg,rgba(20,20,31,.55),transparent 45%)}
+.day__date{font-family:var(--jp);font-weight:900;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--mint);margin-bottom:12px}
+.day--a .day__date{color:var(--yellow)}
+.day__t{font-family:var(--display);text-transform:uppercase;font-size:clamp(2.1rem,4.6vw,4rem);line-height:.88;margin-bottom:6px}
+.day__jp{font-family:var(--jp);font-weight:700;color:var(--dimmer);letter-spacing:.28em;font-size:.72rem;margin-bottom:20px}
+.figures{display:flex;flex-wrap:wrap;gap:10px 30px;margin:22px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.fx{min-width:74px}
+.fx b{display:block;font-family:var(--display);font-size:clamp(1.15rem,2vw,1.7rem);line-height:1;color:var(--bone)}
+.fx span{display:block;font-family:var(--jp);font-weight:700;font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dimmer);margin-top:6px}
+.pull{
+  margin-top:24px;padding:18px 20px;background:rgba(120,240,144,.08);
+  border-left:3px solid var(--mint);font-size:.96rem;line-height:1.6;color:var(--bone);
+}
+.pull cite{display:block;margin-top:10px;font-style:normal;font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mint)}
+
+/* ── ROAR ────────────────────────────────────────────── */
+.roar{position:relative;overflow:hidden;background:var(--ink);padding:clamp(64px,10vw,140px) clamp(24px,7vw,120px);text-align:center}
+.roar__bg{position:absolute;inset:0;background:var(--ink)}
+.roar__bg img{position:absolute;right:-4%;top:50%;transform:translateY(-50%);width:min(560px,58%);opacity:.5;filter:saturate(1.1)}
+.roar__bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(20,20,31,.96) 30%,rgba(20,20,31,.6) 70%,rgba(20,20,31,.9) 100%)}
+.roar__in{position:relative;z-index:2;max-width:900px;margin:0 auto}
+.roar__word{
+  font-family:var(--display);text-transform:uppercase;line-height:.82;
+  font-size:clamp(3.4rem,15vw,12rem);letter-spacing:-.01em;
+  background-color:var(--leo);background-image:var(--leo-spots);background-size:130px 130px;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:2px rgba(70,40,30,.45);
+}
+.roar__jp{font-family:var(--jp);font-weight:900;font-size:clamp(1rem,2.6vw,2rem);letter-spacing:.5em;color:var(--yellow);margin:10px 0 22px}
+.roar p{color:var(--dim);max-width:56ch;margin:0 auto;font-size:clamp(.98rem,1.25vw,1.14rem)}
+.roar p strong{color:var(--bone)}
+
+/* ── RIVALS ──────────────────────────────────────────── */
+.rivals{background:var(--ink-2)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:8px}
+.rc{background:var(--ink-3);border:1px solid var(--line);padding:20px 20px 18px;position:relative;transition:border-color .2s ease,transform .2s ease}
+.rc:hover{border-color:var(--yellow);transform:translateY(-3px)}
+.rc__rel{font-family:var(--jp);font-weight:900;font-size:.55rem;letter-spacing:.26em;text-transform:uppercase;color:var(--violet);margin-bottom:8px}
+.rc--idol .rc__rel{color:var(--yellow)}
+.rc--blood .rc__rel{color:var(--leo)}
+.rc__n{font-family:var(--display);text-transform:uppercase;font-size:1.32rem;line-height:1.05;letter-spacing:.01em}
+.rc__jp{font-family:var(--jp);font-size:.68rem;color:var(--dimmer);letter-spacing:.18em;margin-top:3px}
+.rc__h2h{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);display:grid;gap:6px}
+.rc__h2h li{list-style:none;display:flex;gap:10px;align-items:baseline;font-size:.78rem;color:var(--dim)}
+.rc__h2h .yr{font-family:var(--display);font-size:.82rem;color:var(--dimmer);min-width:34px}
+.rc__h2h .res{margin-left:auto;font-family:var(--display);font-size:.86rem;letter-spacing:.04em;flex-shrink:0}
+.res--w{color:var(--yellow)}.res--l{color:var(--muted)}
+.rc__note{margin-top:12px;font-size:.78rem;color:var(--dimmer);line-height:1.55}
+.rc__score{position:absolute;top:16px;right:18px;font-family:var(--display);font-size:.92rem;letter-spacing:.06em;color:var(--dimmer)}
+
+/* ── BLOOD ───────────────────────────────────────────── */
+.blood{background:var(--ink);position:relative;overflow:hidden}
+.ped{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.ped__col{display:grid;gap:10px}
+.ped__cell{border:1px solid var(--line);padding:12px 14px;display:flex;flex-direction:column;justify-content:center;min-height:64px}
+.ped__cell b{font-family:var(--display);text-transform:uppercase;font-size:.98rem;letter-spacing:.02em;line-height:1.1}
+.ped__cell span{font-size:.68rem;color:var(--dimmer);margin-top:3px}
+.ped__cell--self{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+.ped__cell--self span{color:rgba(20,20,31,.6)}
+.ped__cell--sire{border-left:3px solid var(--mint)}
+.ped__cell--dam{border-left:3px solid var(--leo)}
+.ped__col:first-child{align-content:center}
+.ped__col:nth-child(2){align-content:center}
+
+/* ── SCREEN ──────────────────────────────────────────── */
+.screen{background:var(--ink);position:relative;overflow:hidden}
+.screen__grid{display:grid;grid-template-columns:300px 1fr;gap:clamp(26px,4vw,58px);align-items:start}
+.poster{border:1px solid var(--line);box-shadow:14px 14px 0 rgba(240,220,90,.16)}
+.crts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:26px}
+.crt{position:relative;background:#000;border:1px solid var(--line);overflow:hidden}
+.crt img{width:100%;image-rendering:auto;display:block;filter:saturate(1.15) contrast(1.05)}
+.crt::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(180deg,rgba(0,0,0,.28) 0 1px,transparent 1px 3px);
+  mix-blend-mode:multiply;
+}
+.crt__lab{
+  position:absolute;top:8px;left:8px;z-index:2;font-family:var(--jp);font-weight:900;
+  font-size:.54rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mint);
+  background:rgba(20,20,31,.72);padding:3px 7px;
+}
+.crt__rec{position:absolute;top:8px;right:8px;z-index:2;display:flex;align-items:center;gap:6px;font-family:var(--jp);font-size:.54rem;letter-spacing:.2em;color:var(--bone)}
+.crt__rec i{width:7px;height:7px;border-radius:50%;background:#FF4A3D;animation:blink 1.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+
+/* ── FOOTER ──────────────────────────────────────────── */
+.foot{background:var(--ink);border-top:4px solid var(--yellow);padding:clamp(40px,5vw,64px) clamp(24px,7vw,120px) 34px}
+.foot__top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.foot__mark{font-family:var(--display);text-transform:uppercase;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:.95;letter-spacing:.01em}
+.foot__mark span{display:block;font-family:var(--jp);font-weight:700;font-size:.66rem;letter-spacing:.4em;color:var(--yellow);margin-top:8px}
+.foot__dates{font-family:var(--display);font-size:clamp(1rem,1.8vw,1.4rem);color:var(--dimmer);letter-spacing:.08em}
+.foot__note{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.foot__note p{font-size:.72rem;color:var(--dimmer);line-height:1.65;max-width:60ch}
+.foot__src{font-size:.72rem;color:var(--dimmer)}
+.foot__src a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--line)}
+.foot__src a:hover{color:var(--yellow);border-color:var(--yellow)}
+
+/* ── REVEAL ──────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.rv.on{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ── RESPONSIVE ──────────────────────────────────────── */
+@media (max-width:960px){
+  .trainee__top,.horse__grid,.screen__grid{grid-template-columns:1fr}
+  .day{grid-template-columns:1fr}
+  .day--b .day__media{order:0}
+  .day__media{min-height:280px}
+  .statgrid{grid-template-columns:repeat(2,1fr)}
+  .stat{border-bottom:1px solid rgba(20,20,31,.22)}
+  .stat:nth-child(2n){border-right:none}
+  .stat:last-child{grid-column:1/-1;border-bottom:none}
+  .ped{grid-template-columns:1fr}
+  .ped__col{grid-template-columns:1fr 1fr;display:grid}
+  .ped__col:first-child{grid-template-columns:1fr}
+  .kit{grid-template-columns:1fr}
+  .kit__img{max-width:180px}
+  .poster{max-width:280px}
+  .roar__bg img{width:80%;opacity:.28}
+}
+@media (max-width:620px){
+  .fits{grid-template-columns:1fr;gap:14px}
+  .fit img{aspect-ratio:27/40}
+      .spec__row{grid-template-columns:1fr;gap:0}
+  .spec__v{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<div class="rail"><div class="rail__fill" id="rail"></div></div>
+
+<nav class="poles" aria-label="Section navigation">
+  <a class="pole" href="#top"><span class="pole__label">Start</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#trainee"><span class="pole__label">The Trainee</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#screen"><span class="pole__label">On Screen</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#horse"><span class="pole__label">The Horse</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#numbers"><span class="pole__label">Numbers</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#days"><span class="pole__label">Two Days</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#rivals"><span class="pole__label">Rivals</span><span class="pole__tick"></span></a>
+  <a class="pole" href="#blood"><span class="pole__label">Blood</span><span class="pole__tick"></span></a>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero" id="top">
+  <img class="hero__art" src="media/Jungle_Pocket_Yelling.jpeg" alt="Jungle Pocket roaring in triumph, fist clenched, confetti falling">
+  <div class="hero__scrim"></div>
+  <div class="hero__slash"></div>
+  <div class="hero__slash hero__slash--thin"></div>
+  <div class="hero__jp">ジャングルポケット · 最強になる</div>
+
+  <div class="hero__inner">
+    <div class="hero__kicker">2001 Japanese Horse of the Year</div>
+    <h1 class="hero__title">
+      <span class="l1">Jungle</span>
+      <span class="l2">Pocket</span>
+    </h1>
+    <div class="hero__sub">
+      <span>Tokyo Yushun <b>2001</b></span>
+      <span>Japan Cup <b>2001</b></span>
+      <span>13 starts · <b>5-3-2</b></span>
+      <span>Tony Bin × Dance Charmer</span>
+    </div>
+    <p class="hero__quote"><b>The Strongest</b><span>(Pokke)</span></p>
+  </div>
+  <div class="hero__scroll">Scroll ↓</div>
+</header>
+
+<div class="ticker ticker--yellow">
+  <div class="ticker__track">
+    <b>最強 ROARING</b><b class="px"></b><b>ジャングルポケット</b><b class="px"></b><b>第68回 東京優駿</b><b class="px"></b><b>Japan Cup 2001</b><b class="px"></b><b>Horse of the Year</b><b class="px"></b><b>Ritto Dormitory</b><b class="px"></b>
+    <b>最強 ROARING</b><b class="px"></b><b>ジャングルポケット</b><b class="px"></b><b>第68回 東京優駿</b><b class="px"></b><b>Japan Cup 2001</b><b class="px"></b><b>Horse of the Year</b><b class="px"></b><b>Ritto Dormitory</b><b class="px"></b>
+  </div>
+</div>
+
+<!-- ══════════ THE TRAINEE ══════════ -->
+<section class="trainee wrap" id="trainee">
+  <div class="trainee__top">
+    <div>
+      <div class="eyebrow rv">Umamusume · Pretty Derby</div>
+      <h2 class="h2 rv d1">The Loudest<br>Girl <em>In The<br>Paddock</em></h2>
+      <div class="speech rv d2">
+        <q>Follow my lead. I’ll show ya who’s the ‘strongest’!</q>
+        <cite>Jungle Pocket · ジャングルポケット</cite>
+      </div>
+      <div class="prose rv d2" style="margin-top:26px">
+        <p>Full of mischief and a mouth that likes to boast, <strong>Jungle Pocket</strong>, “Pokke” to anyone brave enough, has exactly one ambition: to be the <em>strongest runner who ever lived</em>. Not the prettiest. Not the most graceful. The strongest.</p>
+        <p>She didn’t come up through the academy system. She came up on the street, running <strong>freestyle races</strong> at the head of a pack of ruffians who’d follow her anywhere. Then she watched <em>Fuji Kiseki</em> run, one blaze of speed, and decided the official turf was where she belonged.</p>
+        <p>Her bros still turn up to cheer. And when she wins a G1, she doesn’t smile politely and wave. She <strong>roars</strong>.</p>
+      </div>
+    </div>
+
+    <div class="rv d1">
+      <div class="spec">
+        <div class="spec__row"><span class="spec__k">Name</span><span class="spec__v">Jungle Pocket <span class="jp">ジャングルポケット</span></span></div>
+        <div class="spec__row"><span class="spec__k">Also known as</span><span class="spec__v">Pokke</span></div>
+        <div class="spec__row"><span class="spec__k">Birthday</span><span class="spec__v">May 7</span></div>
+        <div class="spec__row"><span class="spec__k">Height</span><span class="spec__v">158 cm</span></div>
+        <div class="spec__row"><span class="spec__k">Weight</span><span class="spec__v">47 kg</span></div>
+        <div class="spec__row"><span class="spec__k">Three sizes</span><span class="spec__v">B77 · W56 · H80</span></div>
+        <div class="spec__row"><span class="spec__k">School</span><span class="spec__v">Tracen Academy</span></div>
+        <div class="spec__row"><span class="spec__k">Year</span><span class="spec__v">Senior division</span></div>
+        <div class="spec__row"><span class="spec__k">Dormitory</span><span class="spec__v">Ritto <span class="jp">栗東寮</span></span></div>
+        <div class="spec__row"><span class="spec__k">Roommate</span><span class="spec__v">Narita Top Road</span></div>
+        <div class="spec__row"><span class="spec__k">Running style</span><span class="spec__v">Late surger</span></div>
+        <div class="spec__row"><span class="spec__k">Distance</span><span class="spec__v">Medium</span></div>
+        <div class="spec__row"><span class="spec__k">Voice</span><span class="spec__v">Yuri Fujimoto <span class="jp">藤本侑里</span></span></div>
+        <div class="spec__row"><span class="spec__k">Solo song</span><span class="spec__v">Saikyo ROARING</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fits-row">
+  <div class="fits">
+    <figure class="fit rv">
+      <img src="media/Jungle_Pocket_uniform.jpg" alt="Jungle Pocket in the Tracen Academy sailor uniform, fists up">
+      <figcaption class="fit__tag"><span class="fit__name">Academy Uniform</span><span class="fit__no">01 / 制服</span></figcaption>
+    </figure>
+    <figure class="fit rv d1">
+      <img src="media/Jungle_Pocket_Racewear.jpg" alt="Jungle Pocket in her yellow racing jacket with leopard-print trim and green socks">
+      <figcaption class="fit__tag"><span class="fit__name">Race Colors</span><span class="fit__no">02 / 勝負服</span></figcaption>
+    </figure>
+    <figure class="fit rv d2">
+      <img src="media/Jungle_Pocket_stagewear.jpg" alt="Jungle Pocket in her white and purple stage costume, winking over her shoulder">
+      <figcaption class="fit__tag"><span class="fit__name">Stage Dress</span><span class="fit__no">03 / ステージ</span></figcaption>
+    </figure>
+  </div>
+
+    <figure class="reel rv d2">
+      <img src="media/tunnel.gif" alt="Jungle Pocket walking out through the racecourse tunnel, breaking into a grin">
+      <span class="reel__lab">走路へ · Out To The Track</span>
+    </figure>
+  </div>
+
+  <div class="prose rv" style="max-width:74ch;margin-top:26px;font-size:.9rem">
+    <p><strong>Read the outfit.</strong> Yellow and white cropped jacket taking its colors straight from her ear cuff; light-green flashes on the sleeves; a black crop top with a yellow bowtie dead centre. Navy skirt, lime suspenders clipped to the belt, and a length of <em>leopard-print fur</em> hanging off the left hip. Then the tell: the right sock slouches, the left is pulled tight. Nothing about it is regulation, and the steel-toe boots with leopard heel panels are the point.</p>
+  </div>
+
+  <div class="kit">
+    <img class="kit__img rv" src="media/support-card.png" alt="Jungle Pocket SSR support card artwork">
+    <div>
+      <div class="eyebrow rv">In the game</div>
+      <h3 class="h3 rv d1">Cards &amp; Costumes</h3>
+      <ul class="cardlist rv d2">
+        <li><span class="r">SSR</span><span class="n">The frontier</span><span class="t">Speed</span></li>
+        <li><span class="r">SSR</span><span class="n">I’m the Strongest!</span><span class="t">Stamina</span></li>
+        <li><span class="r">SSR</span><span class="n">Those Who Open the New Generation</span><span class="t">Power</span></li>
+        <li><span class="r">SSR</span><span class="n">C’mon Hot Summer!</span><span class="t">Guts</span></li>
+        <li><span class="r r--sr">SR</span><span class="n">Dead End “Standing in the Way”</span><span class="t">Speed</span></li>
+        <li><span class="r r--n">R</span><span class="n">Tracen Academy</span><span class="t">Speed</span></li>
+      </ul>
+      <div class="prose kit__note rv d3">
+        <p>Trainee outfits: <strong>Ruler’s Battle Cry</strong> (3★, original) and <strong>Vermillion Head</strong> (3★, cheerleader).</p>
+        <p>She was also the game’s first <em>semi-limited</em> trainee: permanently in the pool, but never claimable with a paid 3★ ticket. Gentildonna, Orfevre, Still in Love, Cinderella Gray Oguri Cap and Stay Gold followed her into that bracket.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="kit" style="grid-template-columns:1fr">
+    <div>
+      <div class="eyebrow rv">Setlist</div>
+      <h3 class="h3 rv d1">Songs</h3>
+      <div class="spotify rv d2">
+        <div class="spotify__player">
+          <iframe title="Jungle Pocket (CV. Yuri Fujimoto) on Spotify" loading="lazy"
+            src="https://open.spotify.com/embed/artist/7C07VqCiKxQNUH8cGYkCeD?utm_source=generator&amp;theme=0"
+            width="100%" height="352" frameborder="0" allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <p class="spotify__cred">Official artist page: ジャングルポケット (CV. 藤本侑里)</p>
+        </div>
+        <div class="spotify__list">
+        <ul class="songs">
+        <li class="songs__solo"><a href="https://open.spotify.com/track/6KmkkAjETl3Z6UQjVOiSBt" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">Saikyo ROARING<span class="songs__jp">最強ROARING</span></span><span class="songs__tag">Solo</span><span class="songs__go">Play</span></a></li>
+        <li class=""><a href="https://open.spotify.com/track/5GZQKvS1moshU6O2VYALpx" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">Beyond the Finale</span><span class="songs__go">Play</span></a></li>
+        <li class="songs__prism"><a href="https://open.spotify.com/track/4mRt0ZaR7TN4HZO6YzIdt9" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">PRISMATIC SPURT</span><span class="songs__tag">Movie</span><span class="songs__go">Play</span></a></li>
+        <li class=""><a href="https://open.spotify.com/track/29zkEVaWIPhEqc2yCmSiES" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">Ready!! Steady!! Derby!!</span><span class="songs__go">Play</span></a></li>
+        <li class=""><a href="https://open.spotify.com/track/6rebkKVugpmPEoM1HLKIhy" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">Umapyoi Legend<span class="songs__jp">うまぴょい伝説</span></span><span class="songs__go">Play</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/DRAMATIC%20JOURNEY%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">DRAMATIC JOURNEY</span><span class="songs__go">Find</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/STARTING%20FORCE%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">STARTING FORCE</span><span class="songs__go">Find</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/winning%20the%20soul%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">winning the soul</span><span class="songs__go">Find</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/Ms.%20VICTORIA%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">Ms. VICTORIA</span><span class="songs__go">Find</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/U.M.A.%20NEW%20WORLD%21%21%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">U.M.A. NEW WORLD!!</span><span class="songs__go">Find</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/UMA%20Summer%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">UMA Summer</span><span class="songs__go">Find</span></a></li>
+        <li class="is-find"><a href="https://open.spotify.com/search/Make%20Debut%21%20%E3%82%B8%E3%83%A3%E3%83%B3%E3%82%B0%E3%83%AB%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%20%E8%97%A4%E6%9C%AC%E4%BE%91%E9%87%8C" target="_blank" rel="noopener"><span class="songs__ico" aria-hidden="true"></span><span class="songs__n">Make Debut!</span><span class="songs__go">Find</span></a></li>
+        </ul>
+        <p class="songs__note">Every row opens Spotify in a new tab. <b>Play</b> goes straight to the track; <b>Find</b> opens a search, for the few not listed under her artist credit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker ticker--ink">
+  <div class="ticker__track">
+    <b>ウマ娘 プリティーダービー · 新時代の扉</b><b class="px"></b><b>Beginning of a New Era · 24 May 2024</b><b class="px"></b><b>Studio KAI × Cygames</b><b class="px"></b>
+    <b>ウマ娘 プリティーダービー · 新時代の扉</b><b class="px"></b><b>Beginning of a New Era · 24 May 2024</b><b class="px"></b><b>Studio KAI × Cygames</b><b class="px"></b>
+  </div>
+</div>
+
+<!-- ══════════ ON SCREEN ══════════ -->
+<section class="screen wrap" id="screen">
+  <div class="sec-head">
+    <div class="eyebrow rv">On screen</div>
+    <h2 class="h2 rv d1">Beginning Of<br>A <em>New Era</em></h2>
+  </div>
+
+  <div class="screen__grid">
+    <img class="poster rv" src="media/movie.jpg" alt="Poster for Umamusume: Pretty Derby – Beginning of a New Era">
+    <div>
+      <p class="lede rv d1">The franchise’s first theatrical film opened in Japan on <strong>24 May 2024</strong>, and it handed the lead to Jungle Pocket.</p>
+      <div class="prose rv d2" style="margin-top:18px">
+        <p>It is, in the most literal sense, her story: the delinquent who watched Fuji Kiseki run and enrolled at Tracen; the Classic season shaped by Agnes Tachyon and Dantsu Flame; the roar. She carries it as co-protagonist alongside <strong>Narita Top Road</strong>: her roommate, and the lead of <i>Road to the Top</i>, which shares the same continuity.</p>
+        <p>She’s voiced by <strong>Yuri Fujimoto</strong>, and sings <em>Saikyo ROARING</em> (“strongest roaring”) as her solo.</p>
+      </div>
+      <div class="tags rv d3">
+        <span class="tag tag--hot">Theatrical · 2024.05.24</span>
+        <span class="tag">Cygames × Studio KAI</span>
+        <span class="tag">新時代の扉</span>
+      </div>
+
+      <div class="crts">
+        <figure class="crt rv d1">
+          <span class="crt__lab">Title Card</span>
+          <span class="crt__rec"><i></i>REC</span>
+          <img src="media/banner.gif" alt="Animated title card reading Jungle Pocket">
+        </figure>
+        <figure class="crt rv d2">
+          <span class="crt__lab">Clip 01</span>
+          <span class="crt__rec"><i></i>REC</span>
+          <img src="media/clip-anime.gif" alt="Animated clip from Umamusume: Pretty Derby">
+        </figure>
+        <figure class="crt rv d3">
+          <span class="crt__lab">Clip 02</span>
+          <span class="crt__rec"><i></i>REC</span>
+          <img src="media/clip-movie.gif" alt="Animated split-screen clip from the Umamusume film">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker ticker--leo ticker--flip">
+  <div class="ticker__track">
+    <b>Foaled 7 May 1998</b><b class="px"></b><b>Northern Farm</b><b class="px"></b><b>Bay · 16 hands</b><b class="px"></b><b>Trainer Sakae Watanabe</b><b class="px"></b><b>Timeform 131</b><b class="px"></b>
+    <b>Foaled 7 May 1998</b><b class="px"></b><b>Northern Farm</b><b class="px"></b><b>Bay · 16 hands</b><b class="px"></b><b>Trainer Sakae Watanabe</b><b class="px"></b><b>Timeform 131</b><b class="px"></b>
+  </div>
+</div>
+
+<!-- ══════════ THE HORSE ══════════ -->
+<section class="horse wrap" id="horse">
+  <div class="sec-head">
+    <div class="eyebrow rv">Real life · 1998 to 2021</div>
+    <h2 class="h2 rv d1">The <em>Real-Life</em><br>Legend That<br>Inspired Her</h2>
+  </div>
+
+  <div class="horse__grid">
+    <div>
+      <p class="lede rv">A bay colt with a narrow white blaze, sixteen hands high, bred at Northern Farm in Hokkaido and named, of all things, after an episode of the NHK children’s programme <i>Okaasan to Issho</i>.</p>
+      <div class="prose rv d1" style="margin-top:20px">
+        <p>He was by <strong>Tony Bin</strong>, the Irish-bred stayer who won the 1988 <em>Prix de l’Arc de Triomphe</em> before heading to Japan to become one of the most influential imported sires of his generation. His dam, <strong>Dance Charmer</strong>, never raced a day in her life.</p>
+        <p>He carried the colors of <strong>Yomoji Saito</strong> and was trained throughout by <strong>Sakae Watanabe</strong>, the same owner, trainer and jockey behind <em>Fuji Kiseki</em>, the brilliant colt whose Classic campaign injury cut short. Jungle Pocket would go on to win the Derby that Fuji Kiseki never got to contest.</p>
+        <p>Thirteen starts. Five wins. Two of them the biggest races in the country, seven months apart, at three years old.</p>
+      </div>
+      <div class="tags rv d2">
+        <span class="tag tag--hot">Champion 3-Year-Old Colt 2001</span>
+        <span class="tag tag--hot">Horse of the Year 2001</span>
+        <span class="tag">Timeform 131</span>
+        <span class="tag">Owner Yomoji Saito → Kazuko Yoshida</span>
+        <span class="tag">Jockeys: Koichi Tsunoda · Olivier Peslier</span>
+      </div>
+
+      <figure class="figure snap rv d3">
+        <img src="media/tongue.jpg" alt="The real Jungle Pocket in his stall, tongue hanging out, a brass nameplate on his halter reading Jungle Pocket">
+        <figcaption>The tongue, inherited from Tony Bin, along with everything else</figcaption>
+      </figure>
+    </div>
+
+    <div class="figstack">
+      <figure class="figure figure--plate rv d1">
+        <img src="media/portrait.jpg" alt="Magazine plate titled Portrait of a Great Horse: Jungle Pocket, showing him in full stride under Koichi Tsunoda">
+        <figcaption>『名馬の肖像』· Portrait of a Great Horse</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="ticker ticker--quote">
+  <div class="ticker__track">
+    <b>Jump out of the jungle</b><b class="px"></b><b>His figure is a thoroughbred.</b><b class="px"></b><b>But blood in his body is hybrid of wild beasts.</b><b class="px"></b><b>With sharpness of wolves, quickness of pumas, and monstrous power of grizzly bears, he hunts his preys.</b><b class="px"></b><b>Jungle is too small for him.</b><b class="px"></b><b>In this vast wasteland, his talent will live.</b><b class="px"></b><b class="cite">JRA · Portrait of the Bucephalus</b><b class="px"></b>
+    <b>Jump out of the jungle</b><b class="px"></b><b>His figure is a thoroughbred.</b><b class="px"></b><b>But blood in his body is hybrid of wild beasts.</b><b class="px"></b><b>With sharpness of wolves, quickness of pumas, and monstrous power of grizzly bears, he hunts his preys.</b><b class="px"></b><b>Jungle is too small for him.</b><b class="px"></b><b>In this vast wasteland, his talent will live.</b><b class="px"></b><b class="cite">JRA · Portrait of the Bucephalus</b><b class="px"></b>
+  </div>
+</div>
+
+<!-- ══════════ NUMBERS ══════════ -->
+<section class="numbers wrap" id="numbers">
+  <div class="numbers__ghost" aria-hidden="true">13:5-3-2</div>
+  <div class="numbers__in">
+    <div class="eyebrow rv">The career, totalled</div>
+    <h2 class="h2 rv d1" style="margin-bottom:32px">By The Numbers</h2>
+    <div class="statgrid">
+      <div class="stat rv"><div class="stat__n" data-count="13">13</div><div class="stat__d">Career starts</div><div class="stat__x">2000 – 2002</div></div>
+      <div class="stat rv d1"><div class="stat__n" data-count="5">5</div><div class="stat__d">Wins</div><div class="stat__x">plus 3 seconds, 2 thirds</div></div>
+      <div class="stat rv d2"><div class="stat__n" data-count="2">2</div><div class="stat__d">Grade 1 wins</div><div class="stat__x">Derby · Japan Cup</div></div>
+      <div class="stat rv d3"><div class="stat__n">¥704<sup>M</sup></div><div class="stat__d">Career earnings</div><div class="stat__x">¥704,258,000</div></div>
+      <div class="stat rv d4"><div class="stat__n" data-count="1">1</div><div class="stat__d">Horse of the Year</div><div class="stat__x">JRA Awards, 2001</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker ticker--violet">
+  <div class="ticker__track">
+    <b>27 May 2001 · Tokyo Yushun</b><b class="px"></b><b>25 Nov 2001 · Japan Cup</b><b class="px"></b><b>Won by a neck</b><b class="px"></b><b>115,196 in attendance</b><b class="px"></b>
+    <b>27 May 2001 · Tokyo Yushun</b><b class="px"></b><b>25 Nov 2001 · Japan Cup</b><b class="px"></b><b>Won by a neck</b><b class="px"></b><b>115,196 in attendance</b><b class="px"></b>
+  </div>
+</div>
+
+<!-- ══════════ TWO DAYS ══════════ -->
+<div id="days">
+<section class="day day--a">
+  <div class="day__media"><img src="media/real_horse_race.jpg" alt="Jungle Pocket winning the 2001 Japanese Derby in front of a packed Tokyo grandstand"></div>
+  <div class="day__body">
+    <div class="day__date rv">27 May 2001 · Tokyo · 2,400 m soft</div>
+    <h3 class="day__t rv d1">The Derby</h3>
+    <div class="day__jp rv d1">第68回 東京優駿</div>
+    <div class="prose rv d2">
+      <p>Agnes Tachyon, the colt who had beaten him twice, was gone, a career-ending injury ruling him out of the Classic he was favourite for. What remained was still a proper field: <strong>Dantsu Flame</strong> and the American-bred <strong>Kurofune</strong>.</p>
+      <p>Jungle Pocket drew the outermost gate of eighteen and went off the <em>2.3 favourite</em> anyway. Koichi Tsunoda brought him through the soft ground to win by a length and a half. Then he did the thing that would define him: pulling up after the line, he threw his head and let out a <strong>neighing fit</strong> so loud and so sustained it became part of the record. The roar Cygames would later hand to his Umamusume counterpart, note for note.</p>
+    </div>
+    <div class="figures rv d3">
+      <div class="fx"><b>18</b><span>Gate</span></div>
+      <div class="fx"><b>2.3</b><span>Odds · fav</span></div>
+      <div class="fx"><b>1½ L</b><span>Margin</span></div>
+      <div class="fx"><b>2:27.0</b><span>Time</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="day day--b">
+  <div class="day__media"><img src="media/irl_horse.jpg" alt="Jungle Pocket at full stretch on the turf"></div>
+  <div class="day__body">
+    <div class="day__date rv">25 Nov 2001 · Tokyo · 2,400 m firm</div>
+    <h3 class="day__t rv d1">The Japan Cup</h3>
+    <div class="day__jp rv d1">第21回 ジャパンカップ</div>
+    <div class="prose rv d2">
+      <p>Fifteen runners, 115,196 people, and a genuinely international field: America, Britain, Germany and Hong Kong all represented, with Meisho Doto, Stay Gold and Narita Top Road heading the home defence.</p>
+      <p>At the top of the market stood <strong>T. M. Opera O</strong>: seven G1s already banked, six of them consecutive across an unbeaten 2000 season. Jungle Pocket, with <em>Olivier Peslier</em> up for the first time, was second favourite at 4.2. Peslier settled him near the back, swung wide in the straight, and ran the champion down <strong>in the final strides, by a neck</strong>. The Opera O dynasty ended right there.</p>
+    </div>
+    <div class="pull rv d3">
+      “I’m on top of the world. Jungle Pocket is the Derby winner and I am really proud of the way he has run today in this field. I was bumped a little at the start, and he then raced quite a long way back, but he settled well and I got a good run through.”
+      <cite>Olivier Peslier, after the race</cite>
+    </div>
+    <div class="figures rv d3">
+      <div class="fx"><b>15</b><span>Runners</span></div>
+      <div class="fx"><b>4.2</b><span>Odds · 2nd fav</span></div>
+      <div class="fx"><b>NECK</b><span>Margin</span></div>
+      <div class="fx"><b>2:23.8</b><span>Time</span></div>
+      <div class="fx"><b>115,196</b><span>Crowd</span></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ══════════ ROAR ══════════ -->
+<section class="roar">
+  <div class="roar__bg"><img src="media/Jungle_Pocket_Yelling.jpeg" alt=""></div>
+  <div class="roar__in">
+    <div class="roar__word rv">Roar</div>
+    <div class="roar__jp rv d1">最 強</div>
+    <p class="rv d2">Every G1 she wins, she screams the grandstand down. It looks like character design. It isn’t. It’s <strong>documentary</strong>. The real Jungle Pocket did exactly this after the 2001 Derby, and somebody at Cygames loved him enough to keep it.</p>
+  </div>
+</section>
+
+<div class="ticker ticker--mint ticker--flip">
+  <div class="ticker__track">
+    <b>Agnes Tachyon</b><b class="px"></b><b>Dantsu Flame</b><b class="px"></b><b>Manhattan Cafe</b><b class="px"></b><b>T.M. Opera O</b><b class="px"></b><b>Narita Top Road</b><b class="px"></b><b>Fuji Kiseki</b><b class="px"></b>
+    <b>Agnes Tachyon</b><b class="px"></b><b>Dantsu Flame</b><b class="px"></b><b>Manhattan Cafe</b><b class="px"></b><b>T.M. Opera O</b><b class="px"></b><b>Narita Top Road</b><b class="px"></b><b>Fuji Kiseki</b><b class="px"></b>
+  </div>
+</div>
+
+<!-- ══════════ RIVALS ══════════ -->
+<section class="rivals wrap" id="rivals">
+  <div class="sec-head">
+    <div class="eyebrow rv">Head to head</div>
+    <h2 class="h2 rv d1">Rivals &amp; <em>Bonds</em></h2>
+    <p class="prose rv d2" style="margin-top:16px">A generation is defined by who else was in it. Jungle Pocket’s was ferociously good, and every relationship the Umamusume writers gave her is anchored to a real result on a real afternoon.</p>
+  </div>
+
+  <div class="rgrid">
+    <article class="rc rv">
+      <div class="rc__score">0–2</div>
+      <div class="rc__rel">Friend &amp; rival</div>
+      <div class="rc__n">Agnes Tachyon</div>
+      <div class="rc__jp">アグネスタキオン</div>
+      <ul class="rc__h2h">
+        <li><span class="yr">2000</span>Radio Tampa Hai<span class="res res--l">2 / 1</span></li>
+        <li><span class="yr">2001</span>Satsuki Sho<span class="res res--l">3 / 1</span></li>
+      </ul>
+      <p class="rc__note">Beat him twice and was never beaten by him, then broke down before the Derby and never raced again. The one score that could never be settled.</p>
+    </article>
+
+    <article class="rc rv d1">
+      <div class="rc__score">2–1</div>
+      <div class="rc__rel">Friend &amp; rival</div>
+      <div class="rc__n">Dantsu Flame</div>
+      <div class="rc__jp">ダンツフレーム</div>
+      <ul class="rc__h2h">
+        <li><span class="yr">2001</span>Satsuki Sho<span class="res res--l">3 / 2</span></li>
+        <li><span class="yr">2001</span>Japanese Derby<span class="res res--w">1 / 2</span></li>
+        <li><span class="yr">2001</span>Kikuka Sho<span class="res res--w">4 / 5</span></li>
+      </ul>
+      <p class="rc__note">They met only in the three Classics of 2001. Nowhere else, ever. Jungle Pocket took the one that mattered most.</p>
+    </article>
+
+    <article class="rc rv d2">
+      <div class="rc__score">0–2</div>
+      <div class="rc__rel">Friend &amp; rival</div>
+      <div class="rc__n">Manhattan Cafe</div>
+      <div class="rc__jp">マンハッタンカフェ</div>
+      <ul class="rc__h2h">
+        <li><span class="yr">2001</span>Kikuka Sho<span class="res res--l">4 / 1</span></li>
+        <li><span class="yr">2002</span>Tenno Sho (Spring)<span class="res res--l">2 / 1</span></li>
+      </ul>
+      <p class="rc__note">The stayer he could not get past. Beaten a neck over 3,200 m at Kyoto in what was, statistically, his best run of 2002.</p>
+    </article>
+
+    <article class="rc rv">
+      <div class="rc__score">1–0</div>
+      <div class="rc__rel">Japan Cup opponent</div>
+      <div class="rc__n">T. M. Opera O</div>
+      <div class="rc__jp">テイエムオペラオー</div>
+      <ul class="rc__h2h">
+        <li><span class="yr">2001</span>Japan Cup<span class="res res--w">1 / 2</span></li>
+      </ul>
+      <p class="rc__note">They met exactly once, and Jungle Pocket ended the dynasty by a neck. One meeting, one result, one era closed.</p>
+    </article>
+
+    <article class="rc rv d1">
+      <div class="rc__score">2–1</div>
+      <div class="rc__rel">Roommate · Ritto</div>
+      <div class="rc__n">Narita Top Road</div>
+      <div class="rc__jp">ナリタトップロード</div>
+      <ul class="rc__h2h">
+        <li><span class="yr">2001</span>Japan Cup<span class="res res--w">1 / 3</span></li>
+        <li><span class="yr">2002</span>Hanshin Daishoten<span class="res res--l">2 / 1</span></li>
+        <li><span class="yr">2002</span>Tenno Sho (Spring)<span class="res res--w">2 / 3</span></li>
+      </ul>
+      <p class="rc__note">Contemporaries, both tracing back to Northern Dancer and, in the Umamusume telling, the girl she shares a room with.</p>
+    </article>
+
+    <article class="rc rc--idol rv d2">
+      <div class="rc__rel">Idol · the reason</div>
+      <div class="rc__n">Fuji Kiseki</div>
+      <div class="rc__jp">フジキセキ</div>
+      <p class="rc__note" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">She admires him more than she’ll admit out loud. In real life they shared an owner, a trainer and a jockey, and Jungle Pocket won the Derby that Fuji Kiseki’s injury stole from him. The debt gets paid on the track.</p>
+    </article>
+
+    <article class="rc rc--blood rv">
+      <div class="rc__rel">Sire · blood</div>
+      <div class="rc__n">Tony Bianca</div>
+      <div class="rc__jp">トニービアンカ · Tony Bin</div>
+      <p class="rc__note" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">Her father. Arc winner in 1988, then the sire of Air Groove, North Flight and Sakura Chitose O. The pair share more than a pedigree page: both of them stick their tongues out.</p>
+    </article>
+
+    <article class="rc rc--blood rv d1">
+      <div class="rc__rel">Classmate · blood</div>
+      <div class="rc__n">Tosen Jordan</div>
+      <div class="rc__jp">トーセンジョーダン</div>
+      <p class="rc__note" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line)">A classmate at Tracen. In the real world, his son: winner of the 2011 Tenno Sho (Autumn) and the stallion who carried the line forward.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════ BLOOD ══════════ -->
+<section class="blood wrap" id="blood">
+  <div class="sec-head">
+    <div class="eyebrow rv">Pedigree</div>
+    <h2 class="h2 rv d1">The <em>Blood</em></h2>
+    <p class="prose rv d2" style="margin-top:16px">Bay stallion, foaled 7 May 1998 at Northern Farm. Thoroughbred family 11-g. An Arc winner on top, Northern Dancer underneath.</p>
+  </div>
+
+  <div class="ped rv d1">
+    <div class="ped__col">
+      <div class="ped__cell ped__cell--self"><b>Jungle Pocket</b><span>JPN · bay · 1998–2021</span></div>
+    </div>
+    <div class="ped__col">
+      <div class="ped__cell ped__cell--sire"><b>Tony Bin</b><span>IRE · 1983 · Prix de l’Arc de Triomphe 1988</span></div>
+      <div class="ped__cell ped__cell--dam"><b>Dance Charmer</b><span>USA · 1989 · unraced</span></div>
+    </div>
+    <div class="ped__col">
+      <div class="ped__cell"><b>Kampala</b><span>GB · 1969</span></div>
+      <div class="ped__cell"><b>Severn Bridge</b><span>GB · 1966</span></div>
+      <div class="ped__cell"><b>Nureyev</b><span>USA · 1977 · by Northern Dancer</span></div>
+      <div class="ped__cell"><b>Skillful Joy</b><span>USA · 1978</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="foot">
+  <div class="foot__top">
+    <div class="foot__mark">Jungle Pocket<span>ジャングルポケット · 最強</span></div>
+    <div class="foot__dates">7 May 1998 to 2 March 2021</div>
+  </div>
+  <div class="foot__note">
+    <p>This website is an unofficial, non-commercial fan project. It is not affiliated with, authorised by, endorsed by, or in any way officially connected to Cygames, Inc., Studio KAI, the Japan Racing Association, Northern Farm, Shadai Stallion Station, or any of the owners or connections of Jungle Pocket. All character artwork, footage and photography remains the property of its respective rights holders and is reproduced here for fan-commentary purposes only.</p>
+    <p class="foot__src">Sources ·
+      <a href="https://en.wikipedia.org/wiki/Jungle_Pocket" rel="noopener" target="_blank">Wikipedia</a> ·
+      <a href="https://umamusume.fandom.com/wiki/Jungle_Pocket" rel="noopener" target="_blank">Umamusume Wiki</a> ·
+      <a href="https://umamusume.jp/character/junglepocket" rel="noopener" target="_blank">Official profile</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+/* ── reveals ─────────────────────────────────────────── */
+const io = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }});
+},{threshold:.14});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* ── scroll rail ─────────────────────────────────────── */
+const rail = document.getElementById('rail');
+const poles = [...document.querySelectorAll('.pole')];
+const targets = poles.map(p=>document.querySelector(p.getAttribute('href')));
+function onScroll(){
+  const h = document.documentElement.scrollHeight - innerHeight;
+  rail.style.width = (h>0 ? (scrollY/h)*100 : 0) + '%';
+  let active = 0;
+  targets.forEach((t,i)=>{ if(t && t.getBoundingClientRect().top <= innerHeight*0.45) active = i; });
+  poles.forEach((p,i)=>p.classList.toggle('is-on', i===active));
+}
+addEventListener('scroll', onScroll, {passive:true});
+addEventListener('resize', onScroll);
+onScroll();
+
+/* ── count-up stats ──────────────────────────────────── */
+const counters = new IntersectionObserver((es)=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    counters.unobserve(e.target);
+    const end = +e.target.dataset.count, t0 = performance.now(), dur = 900;
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){ e.target.textContent = end; return; }
+    (function step(now){
+      const k = Math.min(1,(now-t0)/dur), eased = 1-Math.pow(1-k,3);
+      e.target.textContent = Math.round(end*eased);
+      if(k<1) requestAnimationFrame(step);
+    })(t0);
+  });
+},{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>counters.observe(el));
+
+</script>
+
+</body>
+
+</html>
